@@ -1,0 +1,2 @@
+include speech_enhance/config/inference.toml
+include speech_enhance/config/train.toml
