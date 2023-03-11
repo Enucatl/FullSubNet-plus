@@ -6,7 +6,7 @@ import librosa
 from tqdm import tqdm
 
 sys.path.append(os.path.abspath(os.path.join(__file__, "..", "..")))
-from audio_zen.acoustics.mask import is_clipped, load_wav, activity_detector
+from speech_enhance.audio_zen.acoustics.mask import is_clipped, load_wav, activity_detector
 
 
 def offset_and_limit(data_list, offset, limit):

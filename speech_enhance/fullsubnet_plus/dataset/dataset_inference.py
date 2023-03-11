@@ -3,8 +3,8 @@ from pathlib import Path
 import librosa
 import numpy as np
 
-from audio_zen.dataset.base_dataset import BaseDataset
-from audio_zen.utils import basename
+from speech_enhance.audio_zen.dataset.base_dataset import BaseDataset
+from speech_enhance.audio_zen.utils import basename
 
 
 class Dataset(BaseDataset):

@@ -1,9 +1,9 @@
 import random
 
 import numpy as np
-from audio_zen.acoustics.feature import norm_amplitude, tailor_dB_FS, is_clipped, load_wav, subsample
-from audio_zen.dataset.base_dataset import BaseDataset
-from audio_zen.utils import expand_path
+from speech_enhance.audio_zen.acoustics.feature import norm_amplitude, tailor_dB_FS, is_clipped, load_wav, subsample
+from speech_enhance.audio_zen.dataset.base_dataset import BaseDataset
+from speech_enhance.audio_zen.utils import expand_path
 from joblib import Parallel, delayed
 from scipy import signal
 from tqdm import tqdm

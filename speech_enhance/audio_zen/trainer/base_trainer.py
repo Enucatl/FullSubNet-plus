@@ -14,11 +14,11 @@ from torch.cuda.amp import GradScaler
 from torch.nn.parallel import DistributedDataParallel
 from torch.utils.tensorboard import SummaryWriter
 
-import audio_zen.metrics as metrics
-from audio_zen.acoustics.feature import stft, istft
-from audio_zen.acoustics.utils import transform_pesq_range
-from audio_zen.utils import prepare_empty_dir, ExecutionTime
-from utils.logger import log
+import speech_enhance.audio_zen.metrics as metrics
+from speech_enhance.audio_zen.acoustics.feature import stft, istft
+from speech_enhance.audio_zen.acoustics.utils import transform_pesq_range
+from speech_enhance.audio_zen.utils import prepare_empty_dir, ExecutionTime
+from speech_enhance.utils.logger import log
 
 plt.switch_backend('agg')
 

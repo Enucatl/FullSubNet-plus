@@ -11,8 +11,8 @@ from joblib import Parallel, delayed
 from tqdm import tqdm
 
 sys.path.append(os.path.abspath(os.path.join(__file__, "..", "..")))
-import audio_zen.metrics as metrics
-from audio_zen.utils import prepare_empty_dir
+import speech_enhance.audio_zen.metrics as metrics
+from speech_enhance.audio_zen.utils import prepare_empty_dir
 
 
 def load_wav_paths_from_scp(scp_path, to_abs=True):

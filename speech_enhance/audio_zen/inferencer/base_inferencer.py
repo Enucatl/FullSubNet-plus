@@ -12,11 +12,11 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 import time
 
-from audio_zen.acoustics.feature import stft, istft, mc_stft
-from audio_zen.utils import initialize_module, prepare_device, prepare_empty_dir
+from speech_enhance.audio_zen.acoustics.feature import stft, istft, mc_stft
+from speech_enhance.audio_zen.utils import initialize_module, prepare_device, prepare_empty_dir
 
 # for log
-from utils.logger import log
+from speech_enhance.utils.logger import log
 print=log
 
 class BaseInferencer:
@@ -47,7 +47,7 @@ class BaseInferencer:
         self.win_length = self.acoustic_config["win_length"]
         self.sr = self.acoustic_config["sr"]
 
-        # See utils_backup.py
+        # See speech_enhance.utils_backup.py
         self.torch_stft = partial(stft, n_fft=self.n_fft, hop_length=self.hop_length, win_length=self.win_length)
         self.torch_istft = partial(istft, n_fft=self.n_fft, hop_length=self.hop_length, win_length=self.win_length)
         self.torch_mc_stft = partial(mc_stft, n_fft=self.n_fft, hop_length=self.hop_length, win_length=self.win_length)
@@ -102,7 +102,7 @@ class BaseInferencer:
         # model_static_dict = model_checkpoint
         model_static_dict = model_checkpoint["model"]
         epoch = model_checkpoint["epoch"]
-        print(f"当前正在处理 tar 格式的模型断点，其 epoch 为：{epoch}.")
+        print(f"The model breakpoint in tar format is currently being processed with epoch: {epoch}.")
 
         model.load_state_dict(model_static_dict)
         model.to(device)

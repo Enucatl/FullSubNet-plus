@@ -1,12 +1,12 @@
 import torch
 import time
 
-from audio_zen.acoustics.feature import mag_phase
-from audio_zen.acoustics.mask import decompress_cIRM
-from audio_zen.inferencer.base_inferencer import BaseInferencer
+from speech_enhance.audio_zen.acoustics.feature import mag_phase
+from speech_enhance.audio_zen.acoustics.mask import decompress_cIRM
+from speech_enhance.audio_zen.inferencer.base_inferencer import BaseInferencer
 
 # for log
-from utils.logger import log
+from speech_enhance.utils.logger import log
 print=log
 
 def cumulative_norm(input):

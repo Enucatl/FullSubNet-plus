@@ -12,9 +12,9 @@ import torch.multiprocessing as mp
 from torch.utils.data import DataLoader, DistributedSampler
 
 sys.path.append(os.path.abspath(os.path.join(__file__, "..", "..")))
-import audio_zen.loss as loss
-from audio_zen.utils import initialize_module
-from utils.logger import init
+import speech_enhance.audio_zen.loss as loss
+from speech_enhance.audio_zen.utils import initialize_module
+from speech_enhance.utils.logger import init
 
 # get free gpu automatically
 import GPUtil

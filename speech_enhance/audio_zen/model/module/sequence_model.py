@@ -14,14 +14,13 @@ class SequenceModel(nn.Module):
             output_activate_function="Tanh"
     ):
         """
-        序列模型，可选 LSTM 或 CRN，支持子带输入
-
+        Sequence model, optionally LSTM or CRN, supports subband input
         Args:
-            input_size: 每帧输入特征大小
-            output_size: 每帧输出特征大小
-            hidden_size: 序列模型隐层单元数量
-            num_layers:  层数
-            bidirectional: 是否为双向
+            input_size: input feature size per frame
+            output_size: output feature size per frame
+            hidden_size: number of hidden layers of the sequence model
+            num_layers: number of layers
+            bidirectional: whether to be bidirectional
             sequence_model: LSTM | GRU
             output_activate_function: Tanh | ReLU
         """

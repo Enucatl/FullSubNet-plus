@@ -1,14 +1,14 @@
 import torch
 from torch.nn import functional
 
-from audio_zen.acoustics.feature import drop_band
-from audio_zen.model.base_model import BaseModel
-from audio_zen.model.module.sequence_model import SequenceModel
-from audio_zen.model.module.attention_model import ChannelSELayer, ChannelECAlayer, ChannelCBAMLayer, \
+from speech_enhance.audio_zen.acoustics.feature import drop_band
+from speech_enhance.audio_zen.model.base_model import BaseModel
+from speech_enhance.audio_zen.model.module.sequence_model import SequenceModel
+from speech_enhance.audio_zen.model.module.attention_model import ChannelSELayer, ChannelECAlayer, ChannelCBAMLayer, \
     ChannelTimeSenseSELayer, ChannelTimeSenseAttentionSELayer, ChannelTimeSenseSEWeightLayer
 
 # for log
-from utils.logger import log
+from speech_enhance.utils.logger import log
 
 print = log
 
