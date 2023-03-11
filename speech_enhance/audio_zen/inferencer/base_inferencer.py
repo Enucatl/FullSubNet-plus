@@ -35,7 +35,7 @@ class BaseInferencer:
 
         self.inference_config = config["inferencer"]
 
-        self.enhanced_dir = root_dir / f"enhanced_{str(epoch).zfill(4)}"
+        self.enhanced_dir = root_dir
         prepare_empty_dir([self.enhanced_dir])
 
         # Acoustics
