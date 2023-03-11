@@ -10,7 +10,7 @@ I only repackaged inference, contributions welcome for other parts of the origin
 ## Install
 
 ```shell
-pip install speech_enhance@https://github.com/Enucatl/FullSubNet-plus.git
+pip install speech_enhance@git+https://github.com/Enucatl/FullSubNet-plus.git
 ```
 
 ## Quick Usage
